@@ -1,0 +1,105 @@
+/* ================= India Cyber Attack Risk Forecast System ================
+   Futuristic SOC Theme — Glassmorphism + Neon Cyber palette
+   ============================================================================ */
+
+:root {
+  --neon-blue: #00d9ff;
+  --neon-cyan: #00ffe5;
+  --neon-purple: #8a2be2;
+  --bg-dark: #060b18;
+  --panel-bg: rgba(18, 25, 46, 0.55);
+  --panel-border: rgba(0, 217, 255, 0.25);
+}
+
+.stApp {
+  background: radial-gradient(circle at 15% 20%, #0d1b32 0%, #060b18 55%, #030509 100%);
+  color: #e6f1ff;
+}
+
+section[data-testid="stSidebar"] {
+  background: linear-gradient(180deg, #0a1428 0%, #060b18 100%);
+  border-right: 1px solid var(--panel-border);
+}
+
+/* Glass panels */
+.glass-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 18px 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.08), inset 0 0 25px rgba(0,217,255,0.03);
+  margin-bottom: 14px;
+}
+
+.kpi-card {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.06);
+}
+.kpi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(0, 255, 229, 0.35);
+}
+.kpi-value {
+  font-size: 28px;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.kpi-label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9fb8d9;
+  margin-top: 4px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.badge-low { background: rgba(0, 230, 118, 0.15); color: #00e676; border: 1px solid #00e676; }
+.badge-medium { background: rgba(255, 214, 0, 0.15); color: #ffd600; border: 1px solid #ffd600; }
+.badge-high { background: rgba(255, 145, 0, 0.15); color: #ff9100; border: 1px solid #ff9100; }
+.badge-critical { background: rgba(255, 23, 68, 0.15); color: #ff1744; border: 1px solid #ff1744; }
+
+h1, h2, h3 {
+  color: #f0f8ff !important;
+  text-shadow: 0 0 12px rgba(0, 217, 255, 0.25);
+}
+
+.stButton>button {
+  background: linear-gradient(90deg, #0072ff, #8a2be2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 20px;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(0, 114, 255, 0.4);
+  transition: all 0.2s ease;
+}
+.stButton>button:hover {
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.6);
+  transform: translateY(-2px);
+}
+
+div[data-testid="stMetric"] {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+hr { border-color: var(--panel-border); }
